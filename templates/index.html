@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <style>
+ @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('/static/images/temp5.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* background-position: center; */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Add this to ensure the image is behind other content */
+}
+
+
+
+        .button-box {
+            background-color: rgba(65, 250, 250, 0.2); /* Adjust the opacity as needed */
+            border-radius: 15px;
+            padding: 100px ;
+            width: 80% ;
+            margin-left: 50px;
+            height: 500px;
+        }
+  
+
+
+
+
+
+
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 2em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+  color:#fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a{
+  font-family: 'Raleway', sans-serif;
+color: #000;    
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            display: flex;
+            height: 85vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: -150px;
+            width: 60%;
+            text-align: center;
+            margin-left: 300px;
+        }
+
+
+        
+
+
+
+
+
+
+
+
+        .details h2 {
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+        }
+
+        label:hover {
+            transform: scale(1.03);
+        }
+
+        .details h2 {
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+        }
+
+        .details h1 {
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(8, 8, 8);
+        }
+
+        .upload {
+            font-size: 20px;
+            background-color: rgb(255, 252, 252);
+            border-radius: 15px;
+            outline: none;
+            width: 500px;
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        ::-webkit-file-upload-button {
+            color: rgb(255, 252, 252);
+            padding: 20px;
+            border: 2px solid rgb(201, 6, 6);
+            background-color: rgb(201, 6, 6);
+            border-radius: 15px;
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            border: 2px solid rgb(177, 174, 174);
+        }
+
+      
+        .button-62 {
+            position: absolute;
+            margin-top: 200px;
+            padding: 35px 50px;
+            height: 60px;
+            width: 120px;
+  background: linear-gradient(to bottom right, #f6264c, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+/* Customize the "Choose File" button */
+.upload::file-selector-button {
+    font-size: 20px;
+    background-image: linear-gradient(144deg,#00c13d, #01db13 50%,#23fa67);
+/* Change the background color */
+    color: rgb(255, 252, 252); /* Change the text color */
+    border: 2px solid rgb(255, 255, 255); /* Change the border style */
+    border-radius: 6px;
+    padding: 10px 20px; /* Adjust the padding as needed */
+}
+
+/* Hover effect for the "Choose File" button */
+.upload::file-selector-button:hover {
+    background-color: rgb(255, 252, 252); /* Change the background color on hover */
+    color: rgb(255, 255, 255); /* Change the text color on hover */
+    border: 2px solid rgb(255, 254, 254); /* Change the border style on hover */
+}
+
+.upload::file-selector-button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(248, 247, 247, 0.5), -.125rem -.125rem 1rem rgba(71, 239, 130, 0.5), .125rem .125rem 1rem rgba(0, 255, 64, 0.5);
+}
+
+.upload::file-selector-button:hover {
+  box-shadow: 0 0 .25rem rgba(244, 241, 241, 0.5), -.125rem -.125rem 1rem rgba(2, 254, 14, 0.5), .125rem .125rem 1rem rgba(0, 255, 128, 0.5);
+}
+
+
+@keyframes filling {
+  from{
+    background-position: center 25%;
+  }
+  to {
+    background-position: center 50%;
+  }
+}
+
+h1{
+    /* background-color: white; */
+  /* background-image:  url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg); */
+  background-image:url(https://images.pexels.com/photos/122429/leaf-nature-green-spring-122429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color:  #fa0606;
+  padding-top: 20px;
+  font-size: 170px;
+  font-family: 'Bungee', cursive;
+  animation: filling 3s ease forwards;
+}
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+   
+    <h1 style=" font-size: 4rem">Plant Disease Detection System</h1>
+    <section>
+        <div class="container">
+                <div class="button-box">
+                    <form action="/predict" method="post" enctype="multipart/form-data">
+                        <input type="file" name="image" class="upload">
+                        <br>
+                        <input type="submit" value="Predict" class="button-62">
+                    </form>
+                </div>
+            
+        </div>
+    </section>
+
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            🍁
+        </div>
+        <div class="snowflake">
+            🌿 
+        </div>
+        <div class="snowflake">
+            🍂
+        </div>
+        <div class="snowflake">
+            🍃
+        </div>
+        <div class="snowflake">
+            🍁
+        </div>
+        <div class="snowflake">
+           🌿
+        </div>
+        <div class="snowflake">
+            🍂
+        </div>
+        <div class="snowflake">
+            🍃
+        </div>
+        <div class="snowflake">
+            🍁
+        </div>
+        <div class="snowflake">
+            🌿
+        </div>
+      </div>
+</body>
+
+</html>
