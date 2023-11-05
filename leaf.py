@@ -10,7 +10,6 @@ from tensorflow.keras.models import load_model
 
 filepath = 'model.h5'
 model = load_model(filepath)
-print(model)
 
 print("Model Loaded Successfully")
 
