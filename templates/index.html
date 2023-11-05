@@ -247,7 +247,9 @@ h1{
         <div class="container">
                 <div class="button-box">
                     <form action="/predict" method="post" enctype="multipart/form-data">
-                        <input type="file" name="image" class="upload">
+                        <img style="margin: 5px;" width="100px" height="100px" id="preview" />
+                        <br>
+                        <input type="file" name="image" id="filetag" class="upload">
                         <br>
                         <input type="submit" value="Predict" class="button-62">
                     </form>
@@ -290,5 +292,37 @@ h1{
         </div>
       </div>
 </body>
+
+
+<script>
+
+let fileTag = document.getElementById("filetag");
+let preview = document.getElementById("preview");
+    
+fileTag.addEventListener("change", function() {
+  changeImage(this);
+});
+preview.style.display="none";
+function changeImage(input) {
+preview.style.display="none";
+  var reader;
+
+  if (input.files && input.files[0]) {
+    reader = new FileReader();
+
+    reader.onload = function(e) {
+      preview.setAttribute('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+    preview.style.display="block";
+  }
+}
+
+
+
+
+
+</script>
 
 </html>

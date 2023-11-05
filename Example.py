@@ -43,7 +43,7 @@ elif pred==6:
     print("Tomato - Target Spot Disease")
         
 elif pred==7:
-      print("Tomato - Tomoato Yellow Leaf Curl Virus Disease")
+      print("Tomato - Tomato Yellow Leaf Curl Virus Disease")
 elif pred==8:
       print("Tomato - Tomato Mosaic Virus Disease")
         

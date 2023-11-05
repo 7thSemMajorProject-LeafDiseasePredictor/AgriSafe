@@ -11,6 +11,10 @@
     <title>TOMATO LEAF DISEASE PREDICTION</title>
 
     <style>
+        body
+        {
+            background-size: cover;
+        }
         * {
             margin: 0px;
             padding: 0px;
@@ -21,21 +25,27 @@
             border-radius: 15px;
             border: 2px solid black;
         }
-
-     
-         
-
+        .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
 
 		
     </style>
 </head>
 
-<body background="{{url_for('static',filename = 'images/t3.jpg')}}">
+<body background="{{url_for('static',filename = 'images/tempback.jpg')}}" >
 
+    <div class="overlay"></div>
 
 
     <div>
-        <h1 style="text-align:center;font-size:4rem">Predict Tomato Leaf Disease & Get Cure</h1>
+        <h1 style="color: #ffffff;text-align:center;font-size:4rem ;">Predict Tomato Leaf Disease & Get Cure</h1>
     </div>
 
    <br>
@@ -56,18 +66,18 @@
             <div class="col-sm">
 
                 <div>
-                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
-                        class="text-center mb-5 content-h1 rounded">
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: greenyellow;"
+                        class="text-center mb-3 content-h1 rounded">
                         {{pred_output}} </h1>
                 </div>
                 <div class="details">
 					
-					<h4><b> There is no disease on the Tomato leaf. </b> </h4>
+					<h4 style="color: #ffffff;"><b> There is no disease on the Tomato leaf. </b> </h4>
                
                 </div>
             </div>
         </div>
-
+    </div>
 
     </div>
 </body>

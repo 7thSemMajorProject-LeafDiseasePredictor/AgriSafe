@@ -11,6 +11,10 @@
     <title>TOMATO LEAF DISEASE PREDICTION</title>
 
     <style>
+        body {
+            background-size: cover;
+        }
+
         * {
             margin: 0px;
             padding: 0px;
@@ -21,20 +25,31 @@
             border-radius: 15px;
             border: 2px solid black;
         }
-		
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Adjust the opacity as needed */
+        }
     </style>
 </head>
 
-<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+<body background="{{url_for('static',filename = 'images/tempback.jpg')}}">
 
-
+    <div class="overlay"> </div>
 
     <div>
-        <h1 style="text-align:center;font-size:4rem">Predict Tomato Leaf Disease & Get Cure</h1>
+        <h1 style="color: #ffffff;text-align:center;font-size:4rem;text-align: center;">Predict Tomato Leaf Disease &
+            Get Cure</h1>
     </div>
 
-   <br>
-   <br>
+    <br>
+    <br>
 
 
     <div class="container my-2">
@@ -42,8 +57,9 @@
 
             <div class="col-sm" style="margin-bottom: 23px;">
                 <span class="border border-primary">
-                    <img src="{{url_for('static',filename = 'images/Tomato___Spider_mites .JPG' )}}" alt="User Image" style="width:500px;height:500px;">
-                    
+                    <img src="{{url_for('static',filename = 'images/Tomato___Spider_mites .JPG' )}}" alt="User Image"
+                        style="width:500px;height:500px;">
+
 
                 </span>
             </div>
@@ -51,32 +67,45 @@
             <div class="col-sm">
 
                 <div>
-                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
-                        class="text-center mb-5 content-h1 rounded">
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: red;"
+                        class="text-center mb-3 content-h1 rounded">
                         {{pred_output}} </h1>
                 </div>
                 <div class="details">
-					
-					<h4><b> Treatment : </b> </h4>
-                    <h6>
-						For control, use selective products whenever possible. Selective products which have worked well in the field include:
 
-bifenazate (Acramite): Group UN, a long residual nerve poison
-abamectin (Agri-Mek): Group 6, derived from a soil bacterium
-spirotetramat (Movento): Group 23, mainly affects immature stages
-spiromesifen (Oberon 2SC): Group 23, mainly affects immature stages
-OMRI-listed products include:
+                    <h4 style="color: #ffffff;"><b> Treatment : </b> </h4>
+                    <h5 style="color: #ffffff;">
+                        For control, use selective products whenever possible. Selective products which have worked well
+                        in the field include:
 
-insecticidal soap (M-Pede)
-neem oil (Trilogy)
-soybean oil (Golden Pest Spray Oil)
-With most miticides (excluding bifenazate), make 2 applications, approximately 5-7 days apart, to help control immature mites that were in the egg stage and protected during the first application. Alternate between products after 2 applications to help prevent or delay resistance.
-                    </h6>
+                        bifenazate (Acramite): Group UN, a long residual nerve poison
+                        abamectin (Agri-Mek): Group 6, derived from a soil bacterium
+                        spirotetramat (Movento): Group 23, mainly affects immature stages
+                        spiromesifen (Oberon 2SC): Group 23, mainly affects immature stages
+                        OMRI-listed products include:
+
+                        insecticidal soap (M-Pede)
+                        neem oil (Trilogy)
+                        soybean oil (Golden Pest Spray Oil)
+                        With most miticides (excluding bifenazate), make 2 applications, approximately 5-7 days apart,
+                        to help control immature mites that were in the egg stage and protected during the first
+                        application. Alternate between products after 2 applications to help prevent or delay
+                        resistance.
+
+                        <br>
+
+                        Product Link :- <a
+                            href="https://pestiless.com/product/acramite-480-sk-480-g-l-bifenazate-1-l/"
+                            style="color: rgb(255, 0, 0);"> Bifenazate (Acramite) </a>
+                        <br>
+
+
+                    </h5>
                 </div>
             </div>
         </div>
 
-
+    </div>
     </div>
 </body>
 
